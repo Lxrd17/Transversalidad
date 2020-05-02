@@ -1,0 +1,119 @@
+.container, .buton, .nav{
+    position: absolute;
+}
+
+.container{
+    margin: auto;
+    top: 10%;
+    left: -350%;
+    margin-left: -20px;
+}
+
+#toggle{
+    display: none;
+}
+
+.buton{
+    z-index: 999;
+    width: 43px;
+    height: 43px;
+    background: transparent;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.buton:before{
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(90deg);
+}
+
+.buton:after{
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #fff;
+}
+
+.nav{
+    transform: translateY(-10%);
+    opacity: 0;
+    top: 13px;
+    left: -50px;
+    transition: all 0.5s ease-in-out;
+    background: transparent;
+    width: 150px;
+    border-radius: 5px;
+    transform: translateY(0%);
+    box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.1);
+}
+
+.nav a{
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    color: #ffffff	;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 300ms;
+}
+
+.nav a:hover{
+    color: #5f5f5f;
+}
+
+#toggle:checked ~ .nav{
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+#toggle:checked ~ .button{
+    transform: rotate(135deg);
+    box-shadow: 0 0 0 0 transparent;
+}
+@media screen and (max-width: 500px){
+	.container{
+		margin: auto;
+		top: 10%;
+		left: -54%;
+		margin-left: -20px;
+		z-index: 999;
+	}
+	.nav{
+		transform: translateY(-10%);
+		opacity: 0;
+		top: 13px;
+		left: -50px;
+		transition: all 0.5s ease-in-out;
+		background: #fff;
+		width: 150px;
+		border-radius: 5px;
+		transform: translateY(0%);
+		box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.1);
+	}
+	
+	.nav a{
+		text-align: center;
+		display: block;
+		margin: 20px 0;
+		color: #000000;
+		text-decoration: none;
+		font-size: 15px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		transition: all 300ms;
+	}
+
+}

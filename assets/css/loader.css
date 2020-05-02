@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "mifuente";
+	font-style: normal;
+	font-weight: 400;
+	src: url('webfontos/source-sans-pro-v13-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+		 url('../fonts/source-sans-pro-v13-latin-regular.svg#SourceSansPro') format('svg'), /* Legacy iOS */
+		 url('fonts/Net-SFProDisplay-Regular.ttf'),
+		 url('fonts/source-sans-pro-v13-latin-regular.ttf');
+	  }
+	  
+	  html,
+	  body {
+		display: table;
+		width: 100%;
+		height: 100%;
+		background: black;
+	  }
+	  
+	  .hello {
+		color: white;
+		letter-spacing: 2px;
+		font-size: 25px;
+		font-family: "mifuente";
+		font-weight: 300;
+	  }
+	  
+	  #main-ctr {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	  }
+	  
+	  .content {
+		border: 1px solid black;
+		display: inline-block;
+		position: relative;
+	  }
+	  
+	  svg {
+		-webkit-transform: scale(0.5);
+		-moz-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		transform: scale(0.5);
+	  }
+	  svg #smile-up,
+	  svg #circle,
+	  svg #eye-to-left,
+	  svg #eye-to-right,
+	  svg #wink,
+	  svg #bg {
+		visibility: hidden;
+	  }
